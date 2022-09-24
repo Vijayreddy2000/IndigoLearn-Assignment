@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Write CSS code here */
+.bg-container {
+  background-color: #f4faff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-container {
+    margin-top: 96px;
+  }
+}
+.main-heading {
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: 700;
+  color: #171f46;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.main-description {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #64748b;
+  text-align: center;
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin-top: 24px;
+  padding-left: 0;
+}
+@media screen and (min-width: 768px) {
+  .cards-container {
+    flex-direction: row;
+    max-width: 1100px;
+  }
+}
